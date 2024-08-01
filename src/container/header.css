@@ -1,0 +1,219 @@
+/* Default (Light) Mode */
+.headerContainer {
+    width: 100%;
+    background-color: #fbfbfb;
+    color: #030e03;
+    margin: 0;
+    /*border-top-right-radius: 10px;*/
+    /*border-top-left-radius: 10px;*/
+}
+
+.header-block-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cde2fa;
+    height: 15vh;
+    margin: -8px;
+    /*border-top-right-radius: 10px;*/
+    /*border-top-left-radius: 10px;*/
+}
+
+/* Time zone qismi */
+.header-date-time-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.header-time-zone {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header-week-zone {
+    font-size: 15px;
+}
+
+.header-date-zone {
+    font-size: 15px;
+}
+
+.header-week-date-container {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+.header-time-zone,
+.header-week-zone,
+.header-date-zone {
+    margin: 5px;
+    padding-left: 10px;
+    color: #030e03;
+}
+
+/* Menu qismi */
+.header-menu-zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.header-menu-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-menu-button {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #030e03;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.header-menu-button:hover {
+    border-bottom: 1px solid #45ee0c;
+    color: #45ee0c;
+}
+
+/* Night - Light qismi */
+.header-light-night-zone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.header-light-night-zone button {
+    background: none;
+    border: none;
+}
+
+.header-button-clicks {
+    margin-right: 15px;
+}
+
+.header-button-sun,
+.header-button-moon {
+    font-size: 30px;
+}
+
+.header-button-sun {
+    color: #f8d702;
+}
+
+.menu-toggle-button {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*========================================================*/
+/* Mobile conpatibility */
+@media (max-width: 768px) {
+    .header-menu-zone {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 15vh; /* Boshqa elementlar ostida chiqish uchun yuqori chegara */
+        left: 0;
+        background-color: #cde2fa; /* Yangi fon rangi */
+        z-index: 1;
+    }
+
+    .header-menu-zone.open {
+        display: flex;
+    }
+
+    .header-menu-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu-toggle-button {
+        display: block;
+    }
+}
+
+/*=======================================================*/
+/*Tabled complatibility*/
+@media (min-width: 769px) and (max-width: 1024px){
+    .header-menu-zone {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .header-menu-buttons {
+        gap: 10px;
+    }
+
+    .header-menu-button {
+        font-size: 18px;
+    }
+
+    .header-light-night-zone {
+        gap: 5px;
+    }
+
+    .header-button-clicks {
+        margin-right: 10px;
+    }
+
+    .header-button-sun,
+    .header-button-moon {
+        font-size: 25px;
+    }
+
+    .menu-toggle-button {
+        font-size: 25px;
+    }
+    
+}
+
+
+/*=============================================================================*/
+/* Dark Mode */
+.dark-mode .headerContainer {
+    background-color: #0e0e0e;
+    color: #f4f4f4;
+}
+
+.dark-mode .header-block-part {
+    background-color: #333;
+}
+
+.dark-mode .header-time-zone,
+.dark-mode .header-week-zone,
+.dark-mode .header-date-zone {
+    color: #f4f4f4;
+}
+
+.dark-mode .header-menu-button {
+    color: #f4f4f4;
+}
+
+.dark-mode .header-menu-button:hover {
+    border-bottom: 1px solid #f8d702;
+    color: #f8d702;
+}
+
+.dark-mode .header-light-night-zone {
+    color: #f4f4f4;
+}
+
+.dark-mode .header-menu-zone {
+    background-color: #333;
+}
+
+.dark-mode .header-menu-bar-button {
+    color: white;
+}
