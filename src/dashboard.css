@@ -1,3 +1,30 @@
 body {
-    background-color: black;
+    background-color: #fffefe;
 }
+
+.dashContainer {
+    display: flex;
+    flex-direction: column;
+    height: 98vh; /* Butun ekran balandligi */
+    width: 100%;
+}
+
+.content {
+    flex: 1; /* Qolgan bo'sh joyni egallash */
+    overflow-y: auto; /* Kontentning balandligi oshsa, skroll qilingan bo'lsin */
+}
+
+/* HeaderPage uchun uslublar */
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* HeaderPage yuqorida bo'lsin */
+}
+
+.dark-mode {
+    background-color: #171d2a; /* Dark mode fon rangi */
+    color: #e0e0e0; /* Yozuv rangi */
+}
+

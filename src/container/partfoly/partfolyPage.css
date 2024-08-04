@@ -1,0 +1,95 @@
+body {
+    background-color: #ecf4f1;
+}
+
+.partfolyContainer {
+    margin-top: 25px;
+    height: 81vh;
+    padding: 15px;
+}
+
+/*Partfoly part*/
+.partfoly-block-part {
+    height: 75vh;
+}
+
+.portfoly-blocks-part.dark-mode {
+    background-color: #171d2a;
+    color: #fff;
+}
+
+.partfoly-cd-pdf-file-button {
+    background: none;
+    border: none;
+    z-index: 999;
+}
+
+.partfoly-cv-in-button {
+    border: none;
+    border-radius: 25px;
+    width: 300px;
+    height: 350px;
+    padding: 25px;
+    background-color: #c6c4c4;
+}
+
+.partfoly-cv-in-button:hover {
+    border: none;
+    border-radius: 25px;
+    width: 300px;
+    height: 350px;
+    padding: 25px;
+    background-color: #b9bcbc;
+}
+
+.partfoly-button-image-text {
+    margin-top: 15px;
+}
+
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption .dark-mode {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.partfoly-cd-pdf-file-button .dark-mode {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+
+}
+
+.partfoly-cd-pdf-file-button:hover .dark-mode {
+    background: rgb(23, 29, 42);
+    border-radius: 25px;
+}
+
+.carousel-caption.special-background {
+    background: rgba(185, 191, 209, 0.7); /* Example: red background */
+    color: black;
+}
+
+.carousel-caption.special-background.dark-mode {
+    background: rgba(23, 29, 42, 0.7); /* Example: red background */
+    color: white;
+}
+
+.Itempartfoly-block-part {
+    background-color: #171d2a;
+}
+
+/*================================*/
+/*Image bilan ishlash qismi*/
+.partfoly-icon-image {
+    width: 250px;
+    height: 250px;
+}
+
+.partfoly-icon-image {
+    border-radius: 20px;
+}

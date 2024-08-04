@@ -12,9 +12,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #cde2fa;
+    background-color: #e1f1fb;
     height: 15vh;
-    margin: -8px;
+    /*margin: -8px;*/
     /*border-top-right-radius: 10px;*/
     /*border-top-left-radius: 10px;*/
 }
@@ -77,8 +77,10 @@
 }
 
 .header-menu-button:hover {
-    border-bottom: 1px solid #45ee0c;
-    color: #45ee0c;
+    border-bottom: 1px solid #043ae8;
+    color: #043ae8;
+    font-weight: bold;
+    margin-right: 6px;
 }
 
 /* Night - Light qismi */
@@ -142,6 +144,23 @@
     .menu-toggle-button {
         display: block;
     }
+
+    .header-time-zone {
+        font-size: 22px;
+    }
+
+    .header-date-time-zone {
+        display: block;
+    }
+    .header-week-date-container {
+        display: block;
+        text-align: center;
+    }
+
+    .header-date-zone {
+        margin: 5px 0;
+    }
+
 }
 
 /*=======================================================*/
@@ -188,7 +207,7 @@
 }
 
 .dark-mode .header-block-part {
-    background-color: #333;
+    background-color: #030e03;
 }
 
 .dark-mode .header-time-zone,
@@ -211,9 +230,17 @@
 }
 
 .dark-mode .header-menu-zone {
-    background-color: #333;
+    background-color: #030e03;
 }
 
 .dark-mode .header-menu-bar-button {
     color: white;
+}
+
+.header-time-zone {
+    color: red;
+}
+
+.dark-mode .header-time-zone {
+    color: #40ff00;
 }

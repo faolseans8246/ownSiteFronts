@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from "react";
 import moment from "moment";
-import {FaSun, FaMoon, FaBars} from 'react-icons/fa'
-import './header.css'
+import {FaSun, FaMoon, FaBars} from 'react-icons/fa';
+import './header.css';
+import {Link} from 'react-router-dom';
 
-function HeaderFunc() {
+function HeaderFunc({toggleDarkMode, isDarkMode }) {
 
     // Func zone
     const [currentDateTime, setCurrentDateTime] = useState('');
@@ -30,11 +31,11 @@ function HeaderFunc() {
         return () => clearInterval(timerId);
     }, []);
 
-    // Dark and Light mode bilan ishlash qismi
-    const [isDarkMode, setIsDarkMode] = useState(false);
-    const toggleDarkMode = () => {
-        setIsDarkMode(!isDarkMode);
-    }
+    // // Dark and Light mode bilan ishlash qismi
+    // const [isDarkMode, setIsDarkMode] = useState(false);
+    // const toggleDarkMode = () => {
+    //     setIsDarkMode(!isDarkMode);
+    // }
 
     // Menyu holatini boshqarish qismi
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,8 +70,8 @@ function HeaderFunc() {
                 {/*Header menu zone*/}
                 <div className={`header-menu-zone ${isMenuOpen ? 'open' : ''}`}>
                     <div className="header-menu-buttons">
-                        <a href="#" className="header-menu-button">Home</a>
-                        <a href="#" className="header-menu-button">Portfolio</a>
+                        <Link href="#" to="/" className="header-menu-button">Home</Link>
+                        <Link href="#" to="partfoly" className="header-menu-button">Portfolio</Link>
                         <a href="#" className="header-menu-button">Skills</a>
                         <a href="#" className="header-menu-button">Service</a>
                         <a href="#" className="header-menu-button">About</a>
