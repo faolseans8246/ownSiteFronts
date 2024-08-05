@@ -72,10 +72,10 @@ function HeaderFunc({toggleDarkMode, isDarkMode }) {
                     <div className="header-menu-buttons">
                         <Link href="#" to="/" className="header-menu-button">Home</Link>
                         <Link href="#" to="partfoly" className="header-menu-button">Portfolio</Link>
-                        <a href="#" className="header-menu-button">Skills</a>
-                        <a href="#" className="header-menu-button">Service</a>
-                        <a href="#" className="header-menu-button">About</a>
-                        <a href="#" className="header-menu-button">Contacts</a>
+                        <Link href="#" to="skills" className="header-menu-button">Skills</Link>
+                        <Link href="#" to="services" className="header-menu-button">Service</Link>
+                        <Link href="#" to="abouts" className="header-menu-button">About</Link>
+                        <Link href="#" to="contacts" className="header-menu-button">Contacts</Link>
                     </div>
                 </div>
 

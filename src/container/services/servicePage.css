@@ -1,0 +1,54 @@
+body {
+    background-color: #ecf4f1;
+}
+
+.serviceContainer {
+    margin-top: 25px;
+    height: 81vh;
+    padding: 15px;
+}
+
+.service-block-place {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+}
+
+/*blocklarni sozlash qismi*/
+
+.service-main-text-block {
+    background: white;
+    width: 320px;
+    height: 420px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 25px;
+}
+
+.service-main-text-block.dark-mode {
+    background: #212d3c;
+
+}
+
+.service-type-name-text.dark-mode {
+    background: #212d3c;
+}
+
+.service-type-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.service-type-text.dark-mode {
+    background: #212d3c;
+}
+
+.service-mean-text-place {
+    margin-top: 20px;
+}
+
+.service-mean-text-place.dark-mode {
+    background: #212d3c;
+}

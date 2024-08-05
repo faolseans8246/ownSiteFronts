@@ -88,6 +88,19 @@ body {
     border-radius: 20%; /* Rasmni logotip shaklida saqlash */
 }
 
+.home-left-place-bottom-part,
+.animated-code {
+    background: #ecf4f1;
+    color: #043ae8;
+}
+
+.dark-mode .home-left-place-bottom-part,
+.dark-mode .animated-code {
+    background: #171d2a;
+    color: greenyellow;
+}
+
+
 /*xxx*/
 
 

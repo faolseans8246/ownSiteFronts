@@ -1,0 +1,48 @@
+body {
+    background-color: #ecf4f1;
+}
+
+.contactContainer {
+    margin-top: 25px;
+    height: 85vh;
+}
+
+/* bloclar bilan ishlash*/
+.contact-block-part {
+    margin: 10px;
+}
+
+.contact-main-text-part {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/*blocklar bilan ishlash*/
+.contact-outer-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.contact-mess-block {
+    margin-top: 15px;
+}
+.contact-mess-icons {
+    margin-right: 25px;
+}
+
+.contact-val-block {
+    margin-top: 20px;
+}
+
+.contact-mess-icons {
+    font-size: 25px;
+}
+
+.contact-mess-icons, .contact-mess-name {
+    display: inline;
+}

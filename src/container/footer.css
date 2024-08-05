@@ -1,0 +1,40 @@
+
+.footerContainer {
+    background: #4b609a;
+}
+
+.footer-part-blocks {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-main-text-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-text-main {
+    color: white;
+}
+
+/*messanger blocks*/
+.footer-mess-link {
+    text-decoration: none;
+    color: white;
+}
+
+.mess-icons {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-mess-names {
+    display: inline;
+}
+
+.fotter-messangers-part {
+    margin-top: 5px;
+}

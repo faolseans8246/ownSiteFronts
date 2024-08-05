@@ -1,0 +1,76 @@
+body {
+    background: white;
+}
+
+
+.skillContainer {
+    margin-top: 25px;
+    height: 81vh;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skill-box-place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-block-part-soft {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.skill-back-end-skill-part {
+    background: #dbeae9;
+    border-radius: 10px;
+    padding: 10px;
+    width: 340px;
+    margin-right: 20px;
+}
+
+.skill-back-end-skill-part.dark-mode {
+    background: #2f3a5a;
+}
+
+.skill-part-row-place {
+    background: #c2e6e4;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.skill-part-row-place.dark-mode {
+    background: #344267;
+}
+
+/*Back end texnologiya*/
+.skill-main-back-tech {
+    font-size: 50px;
+}
+
+.skill-back-end-main-technology-icons {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.skill-back-end-frameworks-part {
+    display: inline-flex;
+    /*display: flex;*/
+}
+
+.skill-back-frames {
+    margin: 10px;
+    font-size: 20px;
+}
+
+
+.x {
+    color: #f60632;
+}

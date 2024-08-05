@@ -1,0 +1,98 @@
+body {
+    background: #ecf4f1;
+}
+
+.aboutContainer {
+    margin-top: 25px;
+    height: 81vh;
+    padding: 15px;
+}
+
+.about-block-place {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*My part*/
+.about-block-my-self,
+.about-block-my-study {
+    border: 5px solid #ecf4f1;
+    margin: 10px;
+    padding: 10px;
+    width: 650px;
+    background: white;
+    border-radius: 20px;
+}
+
+.about-lect-part-myself,
+.about-lect-part-school {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.about-notes-main-text,
+.about-study-main-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.about-my-address-place,
+.about-my-study-place {
+    border: 5px solid #ecf4f1;
+    margin: 10px;
+    padding: 10px;
+    width: 650px;
+    background: white;
+    border-radius: 20px;
+}
+
+.about-lect-part-address,
+.about-lect-part-study {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.about-address-main-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background: #171d2a;
+    color: white;
+    border: none;
+}
+
+.dark-mode .about-template-part,
+.dark-mode .about-value-part {
+    color: white;
+}
+
+.dark-mode .about-notes-main-text,
+.dark-mode .about-study-main-text {
+    color: white;
+}
+
+.dark-mode .about-notes-main-text,
+.dark-mode .about-address-main-text,
+.dark-mode .about-study-main-text,
+.dark-mode .about-template-part,
+.dark-mode .about-value-part,
+.dark-mode .about-teplate-texts-part,
+.dark-mode .about-value-texts-part,
+.dark-mode .about-lect-part-myself,
+.dark-mode .about-lect-part-address,
+.dark-mode .about-lect-part-school,
+.dark-mode .about-lect-part-study,
+.dark-mode .about-my-study-place,
+.dark-mode .about-block-my-study,
+.dark-mode .about-my-address-place,
+.dark-mode .about-block-my-self {
+    background: #2e3b63;
+}
+
