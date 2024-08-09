@@ -93,3 +93,55 @@ body {
 .partfoly-icon-image {
     border-radius: 20px;
 }
+
+
+/*Mobile views*/
+@media (max-width: 768px) {
+    .partfolyContainer {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .portfoly-blocks-part {
+        /*height: 500px;*/
+        margin-top: 10px;
+    }
+
+    .partfoly-block-part {
+        height: 500px;
+        margin-top: 15px;
+    }
+
+    .partfoly-cv-in-button {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .partfoly-icon-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .carousel-caption {
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .special-background h3 {
+        font-size: 18px;
+    }
+
+    .special-background p {
+        font-size: 14px;
+    }
+
+    .partfoly-cd-pdf-file-button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .partfoly-button-image-text {
+        margin-top: 10px;
+    }
+}

@@ -11,11 +11,8 @@ import {
     SiTwitter,
     SiWhatsapp
 } from "react-icons/si";
-import {CiPhone}                                                from "react-icons/ci";
-import {BiCurrentLocation, BiMap, BiPhone, BiSolidEditLocation} from "react-icons/bi";
+import {BiMap, BiPhone} from "react-icons/bi";
 import {MdEmail}                                                from "react-icons/md";
-import {GrDocumentOutlook} from "react-icons/gr";
-import {TiLocation}               from "react-icons/ti";
 import {FaCss3, FaJava, FaPython} from "react-icons/fa";
 import {TbSql}                    from "react-icons/tb";
 

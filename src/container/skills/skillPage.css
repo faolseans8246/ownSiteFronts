@@ -1,17 +1,11 @@
-body {
-    background: white;
-}
-
-
+/* General Styles */
 .skillContainer {
     margin-top: 25px;
     height: 81vh;
     padding: 15px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .skill-box-place {
@@ -23,16 +17,17 @@ body {
 
 .skill-block-part-soft {
     display: flex;
-    justify-content: space-around;
-
+    flex-wrap: wrap; /* Ensure items wrap when needed */
+    justify-content: center;
 }
 
 .skill-back-end-skill-part {
     background: #dbeae9;
     border-radius: 10px;
     padding: 10px;
-    width: 340px;
+    width: 330px;
     margin-right: 20px;
+    margin-bottom: 20px; /* Add margin to space out sections */
 }
 
 .skill-back-end-skill-part.dark-mode {
@@ -44,13 +39,15 @@ body {
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px;
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
 }
 
 .skill-part-row-place.dark-mode {
     background: #344267;
 }
 
-/*Back end texnologiya*/
+/* Technology icons */
 .skill-main-back-tech {
     font-size: 50px;
 }
@@ -61,8 +58,8 @@ body {
 }
 
 .skill-back-end-frameworks-part {
-    display: inline-flex;
-    /*display: flex;*/
+    display: flex;
+    flex-wrap: wrap; /* Wrap icons to next line if needed */
 }
 
 .skill-back-frames {
@@ -70,7 +67,34 @@ body {
     font-size: 20px;
 }
 
+/* Phone part */
+@media (max-width: 768px) {
+    .skill-block-part-soft {
+        display: flex;
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 10px; /* Add space between rows */
+        padding-left: 0; /* Remove left padding */
+        margin-top: 700px;
+    }
 
-.x {
-    color: #f60632;
+    .skill-back-end-skill-part {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Adjust height as needed */
+    }
+
+    .skill-main-back-tech {
+        font-size: 30px; /* Adjust font size for mobile */
+    }
+
+    .skill-back-frames {
+        font-size: 15px; /* Adjust font size for mobile */
+    }
+
+    .skill-part-row-place {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Adjust height as needed */
+        display: flex; /* Ensure items are aligned properly */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+    }
 }

@@ -38,3 +38,25 @@
 .fotter-messangers-part {
     margin-top: 5px;
 }
+
+/*Phone part*/
+
+@media (max-width: 768px) {
+
+    .footer-part-blocks {
+        padding: 10px;
+        margin-top: 15px;
+        font-size: 10px;
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .footer-part-of-blocks,
+    .footer-part-of-blocks {
+        margin-bottom: 20px;
+    }
+
+
+}

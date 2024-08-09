@@ -3,7 +3,7 @@ body {
 }
 
 .aboutContainer {
-    margin-top: 25px;
+    margin-top: 0;
     height: 81vh;
     padding: 15px;
 }
@@ -96,3 +96,54 @@ body {
     background: #2e3b63;
 }
 
+
+
+/*Mobile views*/
+/* Mobile views */
+@media only screen and (max-width: 768px) {
+    .about-block-place {
+        flex-direction: column; /* Stack blocks vertically */
+        align-items: center; /* Center-align blocks */
+        margin-top: -30px;
+    }
+
+    .about-block-my-self,
+    .about-block-my-study,
+    .about-my-address-place,
+    .about-my-study-place {
+        width: 300px; /* Full-width blocks on mobile */
+    }
+
+    .about-lect-part-myself,
+    .about-lect-part-school,
+    .about-lect-part-address,
+    .about-lect-part-study {
+        flex-direction: column; /* Stack items within blocks */
+        align-items: flex-start; /* Align items to the left */
+        /*font-size: 5px;*/
+    }
+
+    .about-lect-part-myself > div,
+    .about-lect-part-school > div,
+    .about-lect-part-address > div,
+    .about-lect-part-study > div {
+        width: 100%; /* Ensure inner blocks take full width */
+        margin-bottom: 10px; /* Add spacing between stacked items */
+    }
+
+    .about-lect-part-myself,
+    .about-lect-part-address,
+    .about-lect-part-school,
+    .about-lect-part-study {
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+    }
+
+    .about-teplate-texts-part {
+        font-size: 10px;
+    }
+
+    .about-value-texts-part {
+        font-size: 5px;
+    }
+}

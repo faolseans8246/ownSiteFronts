@@ -10,17 +10,16 @@ body {
 
 .service-block-place {
     display: flex;
-    /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping to handle multiple rows */
 }
 
-/*blocklarni sozlash qismi*/
-
+/* Blocklarni sozlash qismi */
 .service-main-text-block {
-    background: white;
-    width: 320px;
-    height: 420px;
+    background: #ede9e9;
+    width: 300px;
+    height: 450px;
     border-radius: 15px;
     padding: 20px;
     margin: 25px;
@@ -28,7 +27,6 @@ body {
 
 .service-main-text-block.dark-mode {
     background: #212d3c;
-
 }
 
 .service-type-name-text.dark-mode {
@@ -51,4 +49,27 @@ body {
 
 .service-mean-text-place.dark-mode {
     background: #212d3c;
+}
+
+/* Mobile views */
+@media (max-width: 768px) {
+    .service-block-place {
+        display: flex;
+        flex-direction: column; /* Stack blocks in a column */
+        align-items: center; /* Center blocks horizontally */
+    }
+
+    .service-main-text-block {
+        width: 90%; /* Adjust width for mobile */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 15px 0; /* Adjust margin for spacing between blocks */
+    }
+
+    .service-type-text {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+
+    .service-mean-text-place {
+        font-size: 12px; /* Adjust font size for better readability */
+    }
 }

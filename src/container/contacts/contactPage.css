@@ -46,3 +46,32 @@ body {
 .contact-mess-icons, .contact-mess-name {
     display: inline;
 }
+
+/*Mobile views*/
+@media (max-width: 768px) {
+
+    .contact-outer-block {
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+    }
+
+    .contact-mess-name {
+        font-size: 10px;
+    }
+
+    .contact-mess-icons {
+        font-size: 10px;
+    }
+
+    .contact-val-name {
+        font-size: 10px;
+    }
+
+    .contact-mess-name {
+        margin-bottom: 5px;
+    }
+
+    .contact-val-block {
+        margin-bottom: 25px;
+    }
+}

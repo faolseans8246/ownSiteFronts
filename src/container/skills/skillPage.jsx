@@ -26,7 +26,7 @@ import {
 } from "react-icons/si";
 import {MdHtml} from "react-icons/md";
 import {BsFiletypeXml}           from "react-icons/bs";
-import {GrKubernetes, GrReactjs} from "react-icons/gr";
+import {GrReactjs} from "react-icons/gr";
 import {BiLogoTailwindCss}       from "react-icons/bi";
 import {DiMysql, DiPostgresql} from "react-icons/di";
 

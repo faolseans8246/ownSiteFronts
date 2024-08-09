@@ -1,30 +1,58 @@
+/* Global Styles */
 body {
     background-color: #fffefe;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* DashContainer Styles */
 .dashContainer {
     display: flex;
     flex-direction: column;
-    height: 98vh; /* Butun ekran balandligi */
+    min-height: 100vh; /* Ensure the container takes full height */
     width: 100%;
+    background-color: #fffefe; /* Light mode background color */
 }
 
+/* Content Styles */
 .content {
-    flex: 1; /* Qolgan bo'sh joyni egallash */
-    overflow-y: auto; /* Kontentning balandligi oshsa, skroll qilingan bo'lsin */
+    flex: 1; /* Takes up remaining space between header and footer */
+    overflow-y: auto; /* Scrolls if content overflows */
+    padding: 20px; /* Add some padding to the content */
 }
 
-/* HeaderPage uchun uslublar */
+/* Footer Styles */
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Header Styles */
 .header-container {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* HeaderPage yuqorida bo'lsin */
+    z-index: 1000; /* Keep the header on top */
+    background-color: #fff; /* Light mode background for header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Dark Mode Styles */
 .dark-mode {
-    background-color: #171d2a; /* Dark mode fon rangi */
-    color: #e0e0e0; /* Yozuv rangi */
+    background-color: #171d2a; /* Dark mode background color */
+    color: #e0e0e0; /* Text color in dark mode */
 }
 
+.dark-mode .header-container {
+    background-color: #1c2537; /* Dark mode background for header */
+    color: #e0e0e0;
+}
+
+.dark-mode footer {
+    background-color: #1c2537; /* Dark mode background for footer */
+    color: #e0e0e0;
+}

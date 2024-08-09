@@ -25,22 +25,21 @@ function DashFunc() {
 
         <Router>
             <div className={`dashContainer ${isDarkMode ? 'dark-mode' : ''}`}>
-                <HeaderPage toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
+                <HeaderPage toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
 
                 <div className="content">
                     <Routes>
-                        <Route path="/" element={<HomePage isDarkMode={isDarkMode}/>} />
-                        <Route path="partfoly" element={<PartfolyPage isDarkMode={isDarkMode}/>}/>
-                        <Route path="skills" element={<SkillPage isDarkMode={isDarkMode}/>}/>
+                        <Route path="/" element={<HomePage isDarkMode={isDarkMode} />} />
+                        <Route path="partfoly" element={<PartfolyPage isDarkMode={isDarkMode} />} />
+                        <Route path="skills" element={<SkillPage isDarkMode={isDarkMode} />} />
                         <Route path="services" element={<ServicePage isDarkMode={isDarkMode} />} />
                         <Route path="abouts" element={<AboutPage isDarkMode={isDarkMode} />} />
                         <Route path="contacts" element={<ContactPage isDarkMode={isDarkMode} />} />
                     </Routes>
-                    <FooterPage />
                 </div>
 
+                <FooterPage />
             </div>
-
         </Router>
     );
 }
